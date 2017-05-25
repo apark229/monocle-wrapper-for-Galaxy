@@ -1,4 +1,4 @@
-#monocle-wrapper-for-Galaxy
+# monocle-wrapper-for-Galaxy
 Monocle wrapper for Galaxy
 https://bioconductor.org/packages/release/bioc/html/monocle.html
 
@@ -18,7 +18,8 @@ Although Monocle can be used with raw read counts, these are not directly propor
 
 Function(s)
 ------
-newCellDataSet: *Creates a new CellDataSet object*
+## newCellDataSet:
+*Creates a new CellDataSet object*
 <dl>
 	<strong>Arguments</strong>
 	<dt>cellData</dt>
