@@ -16,12 +16,12 @@ Although Monocle can be used with raw read counts, these are not directly propor
 
 3. featureData, an *AnnotatedDataFrame* object, where rows are features (e.g. genes), and columns are gene attributes, such as biotype, gc content, etc.
 
-*Function(s)*
-<br>
-newCellDataSet			*Creates a new CellDataSet object*
-<br>
-**Arguments**
+**Function(s)**
+
+##newCellDataSet<br>
+*Creates a new CellDataSet object*
 <dl>
+	**Arguments**
 	<dt>cellData</dt>
 	<dd>expression data matrix for an experiment</dd>
 	<dt>phenoData</dt>
