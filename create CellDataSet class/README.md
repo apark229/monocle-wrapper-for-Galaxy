@@ -18,7 +18,7 @@ Although Monocle can be used with raw read counts, these are not directly propor
 
 Function(s)
 ------
-## newCellDataSet:
+### newCellDataSet:
 *Creates a new CellDataSet object*
 <dl>
 	<strong>Arguments</strong>
