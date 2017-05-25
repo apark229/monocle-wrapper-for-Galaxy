@@ -11,11 +11,11 @@ Although Monocle can be used with raw read counts, these are not directly propor
 *monocle* holds single cell expression data in objects of the *CellDataSet* class.  The class is derived from the Bioconductor *ExpressionSet* class, which provides a common interface familiar to those who have analyzed microarray experiments with Bioconductor.  The class requires three input files:
 <br>
 1. exprs, a numeric matrix of expression values, where rows are genes, and columns are cells
-<br>
+
 2. phenoData, an *AnnotatedDataFrame* object, where rows are cells, and columns are vell attributes (such as cell type, culture condition, day captured, etc.)
-<br>
+
 3. featureData, an *AnnotatedDataFrame* object, where rows are features (e.g. genes), and columns are gene attributes, such as biotype, gc content, etc.
-<br>
+
 *Function(s)*
 <br>
 newCellDataSet			*Creates a new CellDataSet object*
