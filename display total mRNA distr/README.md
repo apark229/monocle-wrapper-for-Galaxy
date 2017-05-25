@@ -4,7 +4,7 @@ https://bioconductor.org/packages/release/bioc/html/monocle.html
 
 Creating the CellDataSet class
 
-From Monocle Vignette and Documentation:
+From Monocle Vignette and Documentation:<br>
 The monocle package takes a matrix of gene expression values as calculated by Cuffinks [2] or another gene expression estimation program. Monocle can work with relative expression values (e.g. FPKM or TPM units) or absolute transcript counts (e.g. from UMI experiments). Monocle also works "out-of-the-box" with the transcript count matrices produced by CellRanger, the software pipeline for analyzing experiments from the 10X Genomics Chromium instrument. Monocle also works well with data from other RNA-Seq work flows such as sci-RNA-Seq and instruments like the Biorad ddSEQ.<br>
 Although Monocle can be used with raw read counts, these are not directly proportional to expression values unless you normalize them by length, so some Monocle functions could produce nonsense results. If you don't have UMI counts, We recommend you load up FPKM or TPM values instead of raw read counts.
 
