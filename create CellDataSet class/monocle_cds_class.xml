@@ -1,0 +1,60 @@
+<tool id="monocle" name="monocle" version="2.4.0">
+    <requirements>
+        <requirement type="package">r-biobase</requirement>
+        <requirement type="package">r-knitr</requirement>
+        <requirement type="package">r-reshape2</requirement>
+        <requirement type="package">r-ggplot2</requirement>
+        <requirement type="package">r-monocle</requirement>
+    </requirements>
+    <stdio>
+        <exit_code range="1:" />
+    </stdio>
+    <command><![CDATA[
+        Rscript ${__tool_directory__}/monocle_cds_class.R 
+        --cellData "$cellData"
+        --phenoData "$includePD.phenoData"
+        --featureData "$includeFD.featureData"
+        --lowerDetectionLimit "$lowerDetectionLimit"
+        --expressionFamily "$expressionFamily"
+        --output "Total_mRNAs.pdf"
+    ]]></command>
+    <inputs>
+        
+        <param name="cellData" type="data" format="tabular" label="expression data matrix for your experiment"/>
+        <conditional name="includePD">
+            <param name="phenoData" type="data" format="tabular" label="data frame containing attributes of individual cells"/>
+        </conditional>
+        <conditional name="includeFD">
+            <param name="featureData" type="data" format="tabular" label="data frame containing attributes of features (e.g. genes)"/>
+        </conditional>
+        <param name="lowerDetectionLimit" size="30" value="0" type="float" format="txt" label="the minimum expression level that consistitutes true expression
+ (set to 0 as default)"/>
+        <param name="expressionFamily" type="select" label="Expression Family Options">
+            <option value="default">negbinomial.size() (default)</option>
+            <option value="negbinomial">negbinomial()</option>
+            <option value="tobit">tobit()</option>
+            <option value="gaussianff">gaussianff()</option>
+        </param>
+        </conditional>
+    </inputs>
+    <outputs>
+        <data name="output1" format="pdf" from_work_dir="Total_mRNAs.pdf"/>
+    </outputs>
+    <tests>
+        <test>
+            <output name="output1" file="Total_mRNAs.pdf"/>
+        </test>
+    </tests>
+    <help><![CDATA[
+Alpha
+    ]]></help>
+    <citations>
+        <citation type="bibtex">
+@misc{renameTODO,
+  author = {TODO, FirstTODO},
+  year = {TODO},
+  title = {TODO},
+  url = {under construction},
+}</citation>
+    </citations>
+</tool>
