@@ -20,6 +20,13 @@ Function(s)
 ------
 ### newCellDataSet:
 *Creates a new CellDataSet object*
+**Arguments**
+⋅⋅⋅cellData				expression data matrix for an experiment
+⋅⋅⋅phenoData			data frame containing attributes of individual cells
+⋅⋅⋅featureData			data frame containing attributes of features (e.g. genes)
+⋅⋅⋅lowerDecetionLimit	the minimum expression level that consistitutes true expression
+⋅⋅⋅expressionFamily		the VGAM family function to be used for expression response variables
+
 <dl>
 	<strong>Arguments</strong>
 	<dt>cellData</dt>
