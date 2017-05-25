@@ -1,4 +1,4 @@
-# monocle-wrapper-for-Galaxy
+#monocle-wrapper-for-Galaxy
 Monocle wrapper for Galaxy
 https://bioconductor.org/packages/release/bioc/html/monocle.html
 
@@ -16,9 +16,9 @@ Although Monocle can be used with raw read counts, these are not directly propor
 
 3. featureData, an *AnnotatedDataFrame* object, where rows are features (e.g. genes), and columns are gene attributes, such as biotype, gc content, etc.
 
-**Function(s)**
-
-##newCellDataSet<br>
+**Function(s)**<br>
+##newCellDataSet
+<br>
 *Creates a new CellDataSet object*
 <dl>
 	**Arguments**
