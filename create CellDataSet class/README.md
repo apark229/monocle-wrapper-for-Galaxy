@@ -28,10 +28,11 @@ Function(s)
 	<dd>data frame containing attributes of individual cells</dd>
 	<dt>featureData</dt>
 	<dd>data frame containing attributes of features (e.g. genes)</dd>
-	<dt>lowerDecetionLimit</dt>
+	<dt>lowerDetectionLimit</dt>
 	<dd>the minimum expression level that consistitutes true expression</dd>
 	<dt>expressionFamily</dt>
 	<dd>the VGAM family function to be used for expression response variables</dd>
 </dl>
-				
 
+Notes - WIP:
+- show mRNA totals
