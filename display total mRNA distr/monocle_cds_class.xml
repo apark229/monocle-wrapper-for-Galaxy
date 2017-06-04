@@ -35,7 +35,6 @@
             <option value="tobit">tobit()</option>
             <option value="gaussianff">gaussianff()</option>
         </param>
-        </conditional>
     </inputs>
     <outputs>
         <data name="output1" format="pdf" from_work_dir="Total_mRNAs.pdf"/>
