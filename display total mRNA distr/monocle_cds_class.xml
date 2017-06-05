@@ -10,25 +10,17 @@
         <exit_code range="1:" />
     </stdio>
     <command><![CDATA[
-        Rscript ${__tool_directory__}/monocle_cds_class.R 
+        Rscript "${__tool_directory__}/monocle_cds_class.R"
         --cellData "$cellData"
-        --phenoData "$includePD.phenoData"
-        --featureData "$includeFD.featureData"
+        --phenoData "$phenoData"
         --lowerDetectionLimit "$lowerDetectionLimit"
         --expressionFamily "$expressionFamily"
         --output "Total_mRNAs.pdf"
     ]]></command>
     <inputs>
-        
         <param name="cellData" type="data" format="tabular" label="expression data matrix for your experiment"/>
-        <conditional name="includePD">
-            <param name="phenoData" type="data" format="tabular" label="data frame containing attributes of individual cells"/>
-        </conditional>
-        <conditional name="includeFD">
-            <param name="featureData" type="data" format="tabular" label="data frame containing attributes of features (e.g. genes)"/>
-        </conditional>
-        <param name="lowerDetectionLimit" size="30" value="0" type="float" format="txt" label="the minimum expression level that consistitutes true expression
- (set to 0 as default)"/>
+        <param name="phenoData" type="data" format="tabular" label="data frame containing attributes of individual cells"/>
+        <param name="lowerDetectionLimit" size="30" value="0" type="float" format="txt" label="the minimum expression level that consistitutes true expression (set to 0 as default)"/>
         <param name="expressionFamily" type="select" label="Expression Family Options">
             <option value="default">negbinomial.size() (default)</option>
             <option value="negbinomial">negbinomial()</option>
