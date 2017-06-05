@@ -1,10 +1,10 @@
 <tool id="monocle" name="monocle" version="2.4.0">
     <requirements>
-        <requirement type="package">r-biobase</requirement>
+        <requirement type="package">bioconductor-biobase</requirement>
         <requirement type="package">r-knitr</requirement>
         <requirement type="package">r-reshape2</requirement>
         <requirement type="package">r-ggplot2</requirement>
-        <requirement type="package">r-monocle</requirement>
+        <requirement type="package">bioconductor-monocle</requirement>
     </requirements>
     <stdio>
         <exit_code range="1:" />
